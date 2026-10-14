@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this report or dataset, please cite it as below."
+title: "When an agent says \"done\": 143 completion claims checked by an independent verifier"
+abstract: "An anonymized dataset of 533 task runs (May to October 2026) by AI agents and deterministic runners, in which every structured completion claim was checked by a separate, rule-based verifier, with a short report, a failure taxonomy and a reproduction script."
+type: dataset
+authors:
+  - family-names: "Moore"
+    given-names: "Frans"
+version: "1.0.0"
+date-released: "2026-10-14"
+license:
+  - Apache-2.0
+  - CC-BY-4.0
+url: "https://github.com/FransDevelopment/agent-completion-claims"
+repository-code: "https://github.com/FransDevelopment/agent-completion-claims"
+keywords:
+  - AI agents
+  - AI safety
+  - evaluation
+  - honesty
+  - completion claims
+  - verification
