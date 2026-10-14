@@ -6,7 +6,7 @@ Frans Moore, October 2026
 
 ## Summary
 
-From May to October 2026 I ran a small organization's research, engineering and operations work through AI agents, 533 task runs in all. 517 of those runs ended with the runner's own structured report: a verdict (PASS, BLOCKED or FAILED), a summary, what it produced, and how it checked its work. Before any task was recorded as complete, a separate, rule-based verifier checked the structure of that report and whether the documents the task required had been delivered.
+From May to October 2026 I ran part of a small organization's research, engineering and operations work through an automated dispatcher, which handed each task to a runner, either an AI agent or a deterministic script, and recorded the result. This dataset is every run of that automated dispatcher: 533 task runs. It is not all of the organization's agent work. In the underlying records, agents handed 2,197 tasks to one another between April and October 2026, and only about a quarter of them went through the automated dispatcher; of the 1,146 that were completed, 705 were completed by other routes, such as interactive agent sessions, that filed no structured claim. Work done directly in interactive sessions, without a task being handed off, is not counted anywhere. 517 of the 533 automated dispatcher runs ended with the runner's own structured report: a verdict (PASS, BLOCKED or FAILED), a summary, what it produced, and how it checked its work. Before a task run through the automated dispatcher was recorded as complete, a separate, rule-based verifier checked the structure of that report and whether the documents the task required had been delivered.
 
 In May 2026, language-model agents claimed success (PASS) 143 times. **The verifier refused 98 of those claims (69%).** Each refusal was a structural failure of the claim, not a judgment of quality:
 
@@ -41,7 +41,7 @@ The verifier judged each claim's structure and whether the required documents ex
 
 | | Runs |
 |---|---|
-| All task runs, May to October 2026 | 533 |
+| All automated dispatcher runs, May to October 2026 | 533 |
 | Runner claimed PASS | 318 |
 | Runner claimed BLOCKED (could not proceed) | 151 |
 | Runner claimed FAILED | 48 |
@@ -96,6 +96,7 @@ One further language-model run has no recorded model. The models did different t
 ## Limitations
 
 - **One operator, one organization, one period.** The tasks are mine, mostly operations and coordination rather than software engineering.
+- **One route, a minority of the work.** The data covers only tasks run through the automated dispatcher. Of the 1,146 handed-off tasks completed between April and October 2026, 705 were completed by other routes and never reached it (from the underlying records, not the public data). The refusal rates describe claims made through the automated dispatcher, not agent work in general.
 - **Observational, not controlled.** Models, tasks, dates, instructions and verifier rules are confounded. The model table is descriptive only.
 - **Group A reflects my own instruction regression.** It shows how agents report when the specification is broken; it is not evidence that agents ignore requirements they were given.
 - **The verifier checks structure, not truth.** The 45 accepted claims are not a verified-correct set; an accepted claim can still be wrong in substance. These numbers bound structural misreporting only.

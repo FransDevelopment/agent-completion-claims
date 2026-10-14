@@ -2,7 +2,7 @@
 
 <!-- SPDX-License-Identifier: CC-BY-4.0 -->
 
-One row per task run, 533 rows, May to October 2026. Rows are in the order the runs were started. The file carries no task text, agent summaries, file names, paths, people, organizations, identifiers or times of day.
+One row per automated dispatcher run, 533 rows, May to October 2026. Tasks completed by other routes, such as interactive agent sessions, are not included. Rows are in the order the runs were started. The file carries no task text, agent summaries, file names, paths, people, organizations, identifiers or times of day.
 
 ## Columns
 
